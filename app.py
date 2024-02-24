@@ -16,10 +16,16 @@ with col1:
     
     Hipot_Result  = st.number_input(" Hipot_Result ", min_value=0.0, max_value=1.0, value=0.0,step=0.1, format="%.2f", key=" Hipot_Result ", help="put your module  Hipot_Result  ", on_change=None, args=None, kwargs=None, placeholder="do not this fill is blank", disabled=False, label_visibility="visible")
 
+    EquipmentName = st.selectbox(
+    'EquipmentName',
+    ('DMT21A-CDCL2_THKa', 'DMT21A-CDCL2_THKb'),key = 'EquipmentName')
 with col2:
     # st.text('Column 2')
     LamSimDwell_Attr = st.number_input("LamSimDwell_Attr", min_value=0.0, max_value=145.0, value=0.0,step=0.5, format="%.2f", key="LamSimDwell_Attr", help="put your module LamSimDwell_Attr ", on_change=None, args=None, kwargs=None, placeholder="do not this fill is blank", disabled=False, label_visibility="visible")
 
+    VTDLite_EquipmentName = st.selectbox(
+    'EquipmentName',
+    ('DMT21A-VTD_COATER', 'DMT21B-VTD_COATER','DMT21C-VTD_COATER'),key = 'VTDLite_EquipmentName')
     IntensityVoltage = st.number_input(" IntensityVoltage", min_value=6.0, max_value=8.0, value=6.0,step=0.1, format="%.2f", key=" IntensityVoltage", help="put your module  IntensityVoltage ", on_change=None, args=None, kwargs=None, placeholder="do not this fill is blank", disabled=False, label_visibility="visible")
 with col3:
     # st.text('Column 3')
@@ -35,6 +41,6 @@ with col3:
 st.text('')
 st.text('')
 st.markdown(
-    '`Create by` [santiviquez](https://twitter.com/santiviquez) | \
-         `Code:` [GitHub](https://github.com/santiviquez/iris-streamlit)')
+    '`Create by` [DNM IT/MES/ME](https://twitter.com/santiviquez) | \
+         `Code:` [GitHub](https://github.com/vanphuoc/TEST)')
 # %%
